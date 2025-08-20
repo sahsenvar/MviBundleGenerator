@@ -12,4 +12,13 @@
         <toolWindow factoryClass="com.github.sahsenvar.mvibundlegenerator.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
         <postStartupActivity implementation="com.github.sahsenvar.mvibundlegenerator.startup.MyProjectActivity" />
     </extensions>
+
+    <actions>
+        <action id="com.github.sahsenvar.mvibundlegenerator.GenerateMviBundleAction"
+                class="com.github.sahsenvar.mvibundlegenerator.actions.GenerateMviBundleAction"
+                text="Zad MVI Bundle"
+                description="Generate MVI bundle files">
+            <add-to-group group-id="NewGroup" anchor="last"/>
+        </action>
+    </actions>
 </idea-plugin>
